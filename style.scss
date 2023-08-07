@@ -1,0 +1,117 @@
+$g: grid;
+
+@mixin full{
+    display: grid;
+    text-align: center;
+    padding-top: 4%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.image{
+    width: 100%;
+}
+.nav{
+    @include full;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+p{
+   color:rgba(130, 130, 130, 1)
+}
+b{
+    color: black;
+}
+.n-1{
+      @include full;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-left: 20%;
+}
+.n-2{
+    @include full;
+    // width: 100%;
+}
+.saidbar-2{
+    @include full;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 22px;
+}
+h2{
+    width: 210px;
+    font-size: 47px;
+
+}
+.tex{
+    @include full;
+    grid-gap: 10px;
+}
+h3{
+    font-size: 34px;
+}
+h5{
+    font-size: 17px;
+    color: rgba(7, 7, 7, 1);
+}
+.saidbar{
+    @include full;
+
+}
+.s-1{
+    display: $g;
+    grid-gap: 25px;
+}
+.s-2{
+    padding-top: 6%;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+}
+.repid{
+    @include full;
+    grid-gap: 5%;
+}
+.repid-2{
+     @include full;
+    grid-gap: 5%;
+    padding-top: 7%;
+}
+.repid-3{
+     @include full;
+    grid-gap: 5%;
+    padding-top: 7%;
+}
+.footer{
+        @include full;
+    padding-top: 7%;
+      padding-top: 4%;
+}
+.f-1{
+    display: $g;
+    grid-gap: 22px;
+}
+.f-2{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+button{
+    border: none;
+    background-color: black;
+    color: #fff;
+    padding: 7px;
+    border-radius: 19px;
+    width: 120px;
+    margin-left: 40%;
+}
+a{
+    display: grid;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
